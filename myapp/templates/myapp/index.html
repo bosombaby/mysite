@@ -35,11 +35,12 @@
                     <img class="w-full" src="{{ product.image.url }}" alt="">
                     <div class="px-6 py-4">
                         <div class="font-bold text-xl mb-2">{{ product.name }}</div>
-                        <div class="font-bold mb-2">发布:<span class="text-indigo-500">{{ product.seller_name }}</span>
-                        </div>
-                        <div class="font-bold text-xl text-green-500 mb-2 ">$ {{ product.price }}</div>
+                         <div class="font-bold text-xl text-green-500 mb-2 pt-2">$ {{ product.price }}</div>
+
                     </div>
-                    <p class="text-gray-700 text-base">{{ product.desc }}</p>
+                    <p class="text-gray-700 text-base px-10 py-3">{{ product.desc }}</p>
+                        <div class="font-bold mb-2 float-right pr-5">发布:<span class="text-indigo-500">{{ product.seller_name }}</span>
+                        </div>
                 </div>
             </a>
         {% endfor %}

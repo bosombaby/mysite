@@ -4,7 +4,6 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
 from .models import Profile
 
-
 # Create your views here.
 
 
@@ -13,7 +12,6 @@ def register(request):
         form = NewUserForm(request.POST)
         if form.is_valid():
             user = form.save()
-            return redirect('myapp/products')
 
     form = NewUserForm()
     context = {
