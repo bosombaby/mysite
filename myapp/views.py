@@ -11,7 +11,10 @@ from .models import Product
 
 # Create your views here.
 def index(request):
-    return HttpResponse('Hello Django!')
+    context = {
+        "text": 'Hello Django'
+    }
+    return render(request, 'myapp/hello.html', context)
 
 
 def products(request):

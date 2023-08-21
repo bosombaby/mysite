@@ -11,5 +11,4 @@ urlpatterns = [
     path('profile/', views.profile, name='profile'),
     path('profile/add', views.profile_add, name='profile_add'),
     path('profile/seller/<int:id>', views.profile_seller, name='profile_seller'),
-
 ]
